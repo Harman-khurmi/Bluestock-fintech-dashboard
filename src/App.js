@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
+import ManageIPO from './pages/ManageIPO';
+import IPOSubscription from './pages/IPOSubscription';
+import IPOAllotment from './pages/IPOAllotment';
+import Settings from './pages/Settings';
+import APIManager from './pages/APIManager';
+import Accounts from './pages/Accounts';
+import Help from './pages/Help';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Sidebar />
+        <div className="main-content">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/manage-ipo" element={<ManageIPO />} />
+            <Route path="/ipo-subscription" element={<IPOSubscription />} />
+            <Route path="/ipo-allotment" element={<IPOAllotment />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/api-manager" element={<APIManager />} />
+            <Route path="/accounts" element={<Accounts />} />
+            <Route path="/help" element={<Help />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
