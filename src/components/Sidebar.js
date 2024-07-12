@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.png';
-import '../components/Sidebar.css';
+import './Sidebar.css';
 
 const Sidebar = () => {
   return (
@@ -10,33 +10,36 @@ const Sidebar = () => {
         <img src={logo} alt="Logo" className="logo" />
       </div>
       <div className="menu-section">
-        <h5>Main Menu</h5>
+        <h5>MENU</h5>
         <Link to="/dashboard" className="menu-item">
-          <i className="icon-dashboard"></i> Dashboard
+          <i class="fa-solid fa-square-poll-vertical"></i>
+          Dashboard
         </Link>
         <Link to="/manage-ipo" className="menu-item">
-          <i className="icon-manage-ipo"></i> Manage IPO
+          <i class="fa-solid fa-cart-shopping"></i>
+          Manage IPO
         </Link>
         <Link to="/ipo-subscription" className="menu-item">
-          <i className="icon-ipo-subscription"></i> IPO Subscription
+          <i class="fa-solid fa-file-lines"></i>
+          IPO Subscription
         </Link>
         <Link to="/ipo-allotment" className="menu-item">
-          <i className="icon-ipo-allotment"></i> IPO Allotment
+          <i class="fa-solid fa-comment-dots"></i> IPO Allotment
         </Link>
       </div>
       <div className="menu-section">
         <h5>Other Options</h5>
         <Link to="/settings" className="menu-item">
-          <i className="icon-settings"></i> Settings
+          <i class="fa-solid fa-gear"></i> Settings
         </Link>
         <Link to="/api-manager" className="menu-item">
-          <i className="icon-api-manager"></i> API Manager
+          <i class="fa-solid fa-wallet"></i> API Manager
         </Link>
         <Link to="/accounts" className="menu-item">
-          <i className="icon-accounts"></i> Accounts
+          <i class="fa-solid fa-user"></i> Accounts
         </Link>
         <Link to="/help" className="menu-item">
-          <i className="icon-help"></i> Help
+          <i class="fa-solid fa-circle-info"></i> Help
         </Link>
       </div>
     </div>

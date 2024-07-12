@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Navbar.css';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
@@ -9,10 +9,11 @@ const Navbar = () => {
         <i class="ri-search-line"></i>
       </div>
       <div className="user-info">
-        <i className="icon-user"></i> John Doe
-        <i className="icon-dropdown"></i>
-        <i className="icon-bell"></i>
+        <div className="user"><i class="fa-solid fa-user"></i></div>
+         Hi, Vishal
+        <i class="fa-solid fa-caret-down" id='arrow-down'></i>
       </div>
+        <i class="fa-solid fa-bell" id='bell'></i>
     </div>
   );
 }

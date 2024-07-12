@@ -1,16 +1,16 @@
 .sidebar {
   width: 250px;
   background-color: #F1F2F7;
-  color: #787F89;
+  color: #787f89;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-right: 10px;
 }
 
 .logo-section {
-  padding: 10px;
+  padding-top: 30px;
+  padding-right: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 .logo {
@@ -19,27 +19,36 @@
 }
 
 .menu-section {
-  padding: 20px;
+  padding-left: 30px;
 }
 
 .menu-section h5 {
   margin-bottom: 10px;
-  color: #787F89;
+  padding-left: 10px;
+  font-size: 14px;
+
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  color: #787F89;
+  padding: 10px 20px;
+  color: rgba(120, 127, 137, 0.6);
   text-decoration: none;
   margin-bottom: 10px;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 160px;
 }
 
 .menu-item:hover {
-  background-color: #495057;
+  background-color: #e4e7f5;
+  color: rgb(90, 106, 207);
+  border-radius: 6px;
 }
 
-.icon {
-  margin-right: 10px;
+.menu-section .menu-item i {
+  font-size: 18px;
+  /* color: rgb(196,199,219); */
 }
