@@ -11,6 +11,7 @@ import APIManager from './pages/APIManager';
 import Accounts from './pages/Accounts';
 import Help from './pages/Help';
 import './App.css';
+import SignIn from './pages/SignIn';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/api-manager" element={<APIManager />} />
             <Route path="/accounts" element={<Accounts />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/signin" element={<SignIn />} />
           </Routes>
         </div>
       </div>

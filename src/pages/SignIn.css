@@ -1,0 +1,180 @@
+/* src/pages/SignIn.css */
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.textlogo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.signin-form {
+  width: 400px;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  position: relative;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: calc(400px);
+  height: 48px;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: -5px;
+  top: 42.5px;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.passforgot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.passforgot .forgot-password {
+  margin-right: -15px;
+  font-size: 12px;
+}
+
+.forgot-password {
+  /* display: block; */
+  /* text-align: right; */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn,
+.social-login-btn,
+.or-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #685CFF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.social-login-btn {
+  display: flex;
+  background-color: #E4E7EB;
+  color: #4B5768;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.social-login-btn .googlelogo
+{
+
+}
+.create-account {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #3F52FF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.create-account:hover {
+  text-decoration: underline;
+}
+.robot
+{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 25px;
+  border: 1px black solid;
+  border-radius: 18px;
+  height: 68px;
+  gap: 10px;
+}
+.robot label
+{
+ margin: 0;
+ padding: 0;
+ font-weight: 400;
+ font-size: 16px;
+}
+
+.keepin
+{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  /* padding-left: 25px; */
+  gap: 10px;
+}
+.keepin label
+{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.or-cover
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.or-cover .left-line,.right-line
+{
+  width: 110px;
+  height: 2px;
+  background-color: #999da35f;
+  border: 0;
+}
+.or-cover button
+{
+  height: 36px;
+  width: 128px;
+  padding: 0px 8px;
+  background-color: #dedede;
+  color: #999DA3;
+  margin-bottom:20px; 
+  margin-bottom: 10px;
+  
+}
