@@ -1,7 +1,7 @@
 // src/pages/SignIn.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './SignIn.css';
+import '../pages/SignIn.css';
 import textlogo from '../assets/textlogo.png';
 import google from '../assets/Google.png';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -51,11 +51,11 @@ const SignIn = () => {
           <label htmlFor="keep-signed-in">Keep me signed in</label>
         </div>
         <button className="login-btn">Login</button>
-          
+
         <div className="or-cover">
-          <hr className='left-line'/>
-        <button className='or-btn'>or sign in with</button>
-        <hr className='right-line'/>
+          <hr className='left-line' />
+          <button className='or-btn'>or sign in with</button>
+          <hr className='right-line' />
         </div>
 
         <button className="social-login-btn"><img src={google} alt="Company Logo" className="googlelogo" />Continue with Google</button>
