@@ -17,9 +17,11 @@ const Forgotpass = () => {
         <div className="interact">
           <label htmlFor="email">Email Address</label>
           <input type="email" id="email" name="email" value="johndoe@gmail.com" />
-        </div>
         <button className="reset-btn">Password Reset</button>
-        <button className="backto-login">Back to Login</button>
+        <Link className='backto-login' to={"/SignIn"}>
+        Back to login
+        </Link>
+        </div>
       </div>
     </div>
   );
