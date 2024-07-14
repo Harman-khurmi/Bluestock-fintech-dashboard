@@ -12,6 +12,8 @@ import Accounts from './pages/Accounts';
 import Help from './pages/Help';
 import './App.css';
 import SignIn from '../src/pages/SignIn';
+import SignUp from '../src/pages/SignUp';
+import Forgotpass from '../src/pages/Forgotpass';
 
 //
 import MainLayout from '../src/layouts/MainLayout';
@@ -27,6 +29,8 @@ function App() {
           <Routes>
             <Route element={<AuthLayout />}>
               <Route path="/SignIn" element={<SignIn />} />
+              <Route path="/SignUp" element={<SignUp />} />
+              <Route path="/Forgotpass" element={<Forgotpass />} />
             </Route>
             <Route element={<MainLayout />}>
               <Route path="/" element={<Dashboard />} />
