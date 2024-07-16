@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import TableHeader from '../components/TableHeader';
 import Pagination from '../components/Pagination';
 import './ManageIPO.css';
-// import React from 'react';
 
 const ManageIPO = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -113,10 +112,10 @@ const ManageIPO = () => {
               <td>{row.issueType}</td>
               <td>{row.listingDate}</td>
               <td><button className={`status-button ${row.status}`}>{row.status}</button></td>
-              <td><button onClick={handleUpdate}>Update</button></td>
+              <td><button className='update-btn' onClick={handleUpdate}>Update</button></td>
               <td>
-                <i className="fa fa-eye"></i>
-                <i className="fa fa-trash"></i>
+                <i class="fa-regular fa-trash-can trash-icon icons"></i>
+                <i className="fa fa-eye eye-icon icons"></i>
               </td>
             </tr>
           ))}
