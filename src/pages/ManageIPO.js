@@ -4,12 +4,6 @@ import TableRow from '../components/TableRow';
 import './ManageIPO.css';
 // import React from 'react';
 
-<<<<<<< HEAD
-const ManageIPO = () => {
-  return (
-    <div>
-      <h1>Manage IPO</h1>
-=======
 // Sample data for different pages
 const pageData = [
   [
@@ -135,7 +129,6 @@ const ManageIPO = () => {
           &gt;
         </button>
       </div>
->>>>>>> parent of 5c05a6c (Manageipo- need to change)
     </div>
   );
 }
