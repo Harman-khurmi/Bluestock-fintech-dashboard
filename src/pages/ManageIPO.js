@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Pagination from '../components/Pagination';
 import './ManageIPO.css';
-import React from 'react';
+// import React from 'react';
 
 const ManageIPO = () => {
   return (
