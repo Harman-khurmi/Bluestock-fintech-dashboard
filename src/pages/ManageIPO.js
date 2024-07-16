@@ -1,4 +1,3 @@
-//new version
 import React, { useState } from 'react';
 import TableHeader from '../components/TableHeader';
 import TableRow from '../components/TableRow';
@@ -90,6 +89,7 @@ const ManageIPO = () => {
 
   const handleUpdate = () => {
     // Update logic here
+    //not used yet
   };
 
   return (
@@ -121,11 +121,11 @@ const ManageIPO = () => {
       </table>
       <div className="pagination">
         <button onClick={handlePrevPage} disabled={currentPage === 0}>
-          &lt; Prev
+          &lt;
         </button>
         <span>Page {currentPage + 1} of {pageData.length}</span>
         <button onClick={handleNextPage} disabled={currentPage === pageData.length - 1}>
-          Next &gt;
+          &gt;
         </button>
       </div>
     </div>

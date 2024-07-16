@@ -71,7 +71,8 @@ html {
   flex: 1;
   /* padding-top: 20px; */
   /* padding-left: 25px; */
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: white;
 }
 
 .navbar {

@@ -25,6 +25,6 @@ td {
   background-color: #03a9f4;
 }
 
-.status-button['new listed'] {
+.status-button.newlisted {
   background-color: #4caf50;
 }
