@@ -1,0 +1,64 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-number,
+.prev-button,
+.next-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.page-number.active {
+  font-weight: bold;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.dots {
+  padding: 5px 10px;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* row css */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.status-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.status-button.ongoing {
+  background-color: #ffeb3b;
+}
+
+.status-button.upcoming {
+  background-color: #03a9f4;
+}
+
+.status-button.newlisted {
+  background-color: #4caf50;
+}

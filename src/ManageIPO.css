@@ -1,0 +1,49 @@
+.manage-ipo {
+  padding: 20px;
+}
+
+.register-ipo {
+  float: right;
+}
+
+.ipo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ipo-table th,
+.ipo-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.ipo-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.ipo-table tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.ipo-table th {
+  background-color: #ddd;
+}
+
+.status-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.status-button.ongoing {
+  background-color: #ffeb3b;
+}
+
+.status-button.upcoming {
+  background-color: #03a9f4;
+}
+
+.status-button.newlisted {
+  background-color: #4caf50;
+}
