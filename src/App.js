@@ -14,6 +14,7 @@ import './App.css';
 import SignIn from '../src/pages/SignIn';
 import SignUp from '../src/pages/SignUp';
 import Forgotpass from '../src/pages/Forgotpass';
+import RegisterIPO from './pages/RegisterIPO';
 
 //
 import MainLayout from '../src/layouts/MainLayout';
@@ -36,6 +37,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/manage-ipo" element={<ManageIPO />} />
+              <Route path="/register-ipo" element={<RegisterIPO />} />
               <Route path="/ipo-subscription" element={<IPOSubscription />} />
               <Route path="/ipo-allotment" element={<IPOAllotment />} />
               <Route path="/settings" element={<Settings />} />

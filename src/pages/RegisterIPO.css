@@ -1,0 +1,225 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.register-ipo-container {
+  padding-right: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.heading h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  gap: 22px;
+  padding-left: 420px;
+}
+
+.register-btn {
+  background-color: #4F80E1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  height: 46px;
+  width: 128px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  cursor: pointer;
+  background-color: white;
+  color: #4F80E1;
+  padding: 10px 20px;
+  border: 2px solid #4F80E1;
+  border-radius: 10px;
+  height: 46px;
+  width: 128px;
+}
+
+.content {
+  display: flex;
+}
+
+.navigation {
+  width: 23%;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 220px;
+  height: 46px;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  background-color: #4F80E126;
+  color: #0240BC;
+}
+
+.nav-btn .info-icon {
+  margin-right: 25px;
+}
+
+.details {
+  width: 77%;
+  padding-left: 80px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.right-headings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.details h2 {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.details h3 {
+  margin-top: -10px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.409);
+}
+
+.company-details {
+  width: 80%;
+}
+
+.company-details h4 {
+  text-align: left;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-top: 0px;
+}
+
+.ipo-logo-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: -12px;
+}
+
+.ipo-company-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 10px;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.ipo-company-detail h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ipo-company-detail p {
+  margin: 0;
+  padding: 0;
+  opacity: 80%;
+}
+
+.ipo-logo-buttons button {
+  margin-left: 20px;
+  height: 40px;
+  width: 102px;
+  background-color: #4F80E1;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ipo-logo-buttons .delete-btn {
+  background-color: white;
+  border: 2px solid #4F80E1;
+  color: #4F80E1;
+  font-weight: 500;
+}
+
+
+.inputs {
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 0px 0px 0px 0px;
+  gap: 120px 100px;
+
+}
+.top-rows
+{
+  min-height: 70vh;
+  
+}
+.bottom-rows
+{
+  min-height: 100vh;
+}
+.bottom-row-head
+{
+  text-align: left;
+  justify-content: left;
+  font-size: 16px;
+}
+.input-row {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.input-row label {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  padding: 5px;
+  width: 300px;
+  line-height: 36px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}

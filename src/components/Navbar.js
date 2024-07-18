@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="user-info">
         <div className="user"><i class="fa-solid fa-user"></i></div>
-         Hi, Vishal
+         Hi, Harman
         <i class="fa-solid fa-caret-down" id='arrow-down'></i>
       </div>
         <i class="fa-solid fa-bell" id='bell'></i>

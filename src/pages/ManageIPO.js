@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import TableHeader from '../components/TableHeader';
 import Pagination from '../components/Pagination';
 import './ManageIPO.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const ManageIPO = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -87,15 +89,22 @@ const ManageIPO = () => {
       // Add more data for additional pages as needed
     };
     return data[page] || [];
+
   };
 
   const tableData = getTableDataForPage(currentPage);
+  //register IPO button function
+  const navigate = useNavigate();
+  const handleRegisterIPO = () => {
+    navigate('/register-ipo');
+  };
+
 
   return (
     <div className="manage-ipo-container">
       <div className="header">
         <h1>Upcoming IPO</h1>
-        <button className="register-ipo">Register IPO</button>
+        <button className="register-ipo" onClick={handleRegisterIPO}>Register IPO</button>
       </div>
       <table className="ipo-table">
         <thead>
