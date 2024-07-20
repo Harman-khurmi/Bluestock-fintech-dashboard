@@ -10,7 +10,7 @@ const Forgotpass = () => {
     <div className="forgotpass">
       <div className="forgot-container">
         <img src={textlogo} alt="Company Logo" className="textlogo" />
-        <div className="content">
+        <div className="forgot-pass-content">
           <h2>Forgot Password?</h2>
           <h3>Enter your email address to get the password reset link.</h3>
         </div>

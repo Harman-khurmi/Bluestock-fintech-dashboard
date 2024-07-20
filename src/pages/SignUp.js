@@ -54,7 +54,7 @@ const SignUp = () => {
           <label htmlFor="robot-check">I'm not a robot</label>
           <img src={captcha} alt="" className="captcha" />
         </div>
-        <button className="login-btn">Sign up</button>
+        <button className="login-btn"><Link to="/Dashboard" className='Login-link'>Sign up</Link></button>
 
         <div className="or-cover">
           <hr className='left-line' />

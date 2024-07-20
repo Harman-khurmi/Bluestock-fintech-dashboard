@@ -102,7 +102,11 @@
   margin-top: 10px;
   font-weight: 500;
 }
-
+.Login-link
+{
+  text-decoration: none;
+  color: white;
+}
 .social-login-btn {
   display: flex;
   background-color: #E4E7EB;

@@ -15,17 +15,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.content {
+.forgot-pass-content {
+  flex-direction: column;
   text-align: center;
 }
 
-.content h2 {
+.forgot-pass-content h2 {
   font-size: 24px;
+  margin-bottom: 0;
 }
 
-.content h3 {
+.forgot-pass-content h3 {
   font-weight: 400;
   font-size: 18px;
 }
@@ -63,8 +67,8 @@
   cursor: pointer;
   font-weight: 500;
 }
-.backto-login
-{
+
+.backto-login {
   width: 100%;
   padding: 10px 0px;
   border: 1px solid #ccc;

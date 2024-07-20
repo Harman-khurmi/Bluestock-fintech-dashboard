@@ -51,7 +51,7 @@ const SignIn = () => {
           <input type="checkbox" id="keep-signed-in" name="keep-signed-in" />
           <label htmlFor="keep-signed-in">Keep me signed in</label>
         </div>
-        <button className="login-btn">Login</button>
+        <button className="signin-btn"><Link to="/Dashboard" className='signin-link'>Login</Link></button>
 
         <div className="or-cover">
           <hr className='left-line' />

@@ -88,7 +88,7 @@
   text-decoration: underline;
 }
 
-.login-btn,
+.signin-btn,
 .social-login-btn,
 .or-btn {
   width: 100%;
@@ -102,7 +102,12 @@
   margin-top: 10px;
   font-weight: 500;
 }
-
+.signin-link
+{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
 .social-login-btn {
   display: flex;
   background-color: #E4E7EB;
