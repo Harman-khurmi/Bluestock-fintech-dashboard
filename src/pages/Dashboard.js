@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
+// import { Doughnut } from 'react-chartjs-2';
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from 'recharts';
 import './Dashboard.css';
-
+import MultiCircularChart from '../components/MultiCircularChart';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Dashboard = () => {
-  const ipoData = {
-    labels: ['In Loss', 'In Profit', 'Total IPO'],
-    datasets: [
-      {
-        data: [20, 50, 70],
-        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56'],
-        hoverBackgroundColor: ['#ff6384', '#36a2eb', '#ffce56'],
-      },
-    ],
-  };
+  // const ipoData = {
+  //   labels: ['In Loss', 'In Profit', 'Total IPO'],
+  //   datasets: [
+  //     {
+  //       data: [20, 50, 70],
+  //       backgroundColor: ['#ff6384', '#36a2eb', '#ffce56'],
+  //       hoverBackgroundColor: ['#ff6384', '#36a2eb', '#ffce56'],
+  //     },
+  //   ],
+  // };
 
   const mainBoardData = {
     labels: ['Ongoing', 'Upcoming', 'New Listed'],
@@ -96,17 +96,17 @@ const Dashboard = () => {
           <h2>IPO Dashboard India</h2>
           <h4>IPO in Gain</h4>
           <div className="charts">
-            <div className="chart">
-              <Doughnut data={ipoData} />
-              <p>In Loss</p>
-            </div>
-            <div className="chart">
-              <Doughnut data={ipoData} />
-              <p>In Profit</p>
-            </div>
-            <div className="chart">
-              <Doughnut data={ipoData} />
-              <p>Total IPO</p>
+            {/* <div>
+              <CircularChart
+                value={20}
+                maxValue={100}
+                size={180} //diameter of circular chart
+                // backgroundColor="#f0f0f0"
+                fillColor="#ff6347"
+              />
+            </div> */}
+            <div>
+              <MultiCircularChart />
             </div>
           </div>
         </div>
@@ -117,28 +117,28 @@ const Dashboard = () => {
           <ul>
             <li>
               <div className="logo">
-              <img src="broker1-logo.png" alt="" />
+                <img src="broker1-logo.png" alt="" />
               </div>
               <p> NSE India</p>
               <a href="/">Visit Now</a>
             </li>
             <li>
               <div className="logo">
-              <img src="broker2-logo.png" alt="" />
+                <img src="broker2-logo.png" alt="" />
               </div>
-              <p> NSE India</p> 
+              <p> NSE India</p>
               <a href="/">Visit Now</a>
             </li>
             <li>
               <div className="logo">
-              <img src="broker3-logo.png" alt="" />
+                <img src="broker3-logo.png" alt="" />
               </div>
-              <p> NSE India</p> 
+              <p> NSE India</p>
               <a href="/">Visit Now</a>
             </li>
             <li>
               <div className="logo">
-              <img src="broker4-logo.png" alt="" />
+                <img src="broker4-logo.png" alt="" />
               </div>
               <p> NSE India</p>
               <a href="/">Visit Now</a>
