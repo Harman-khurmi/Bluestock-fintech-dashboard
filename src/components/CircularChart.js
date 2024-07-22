@@ -33,7 +33,8 @@ const CircularChart = ({ value, maxValue, size, backgroundColor, fillColor }) =>
 
     g.append('path')
       .attr('d', arc)
-      .attr('fill', fillColor);
+      .attr('fill', fillColor)
+      .style('opacity', 0.8);
 
     // Outer ring
     const outerArc = d3.arc()
