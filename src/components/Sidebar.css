@@ -51,3 +51,11 @@
   font-size: 18px;
   /* color: rgb(196,199,219); */
 }
+
+/* change bg color on click */
+
+.menu-item.active {
+  background-color: #e4e7f5;
+  color: rgb(90, 106, 207);
+  border-radius: 6px;
+}
