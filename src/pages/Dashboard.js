@@ -126,21 +126,21 @@ const Dashboard = () => {
               <div className="logo">
                 <img src="broker2-logo.png" alt="" />
               </div>
-              <p> NSE India</p>
+              <p> BSE India</p>
               <a href="/">Visit Now</a>
             </li>
             <li>
               <div className="logo">
                 <img src="broker3-logo.png" alt="" />
               </div>
-              <p> NSE India</p>
+              <p> SEBI</p>
               <a href="/">Visit Now</a>
             </li>
             <li>
               <div className="logo">
                 <img src="broker4-logo.png" alt="" />
               </div>
-              <p> NSE India</p>
+              <p>Money Control</p>
               <a href="/">Visit Now</a>
             </li>
           </ul>

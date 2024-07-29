@@ -57,7 +57,7 @@
   text-decoration: none;
   color: black;
   opacity: 60%;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 .quick-links li {
@@ -70,28 +70,34 @@
 }
 
 .quick-links li .logo {
-  background-color: antiquewhite;
+  background-color:teal;
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .quick-links img {
   margin-right: 10px;
 }
 
+.quick-links p {
+  width: 110px;
+}
+
 .pie-chart-section {
   margin-top: -5px;
+  border: none;
+  padding: 0;
 }
 
 .view-report-btn {
-  margin-left: 20px;
+  margin-left: 120px;
   padding: 5px 10px;
   background-color: #dddddd18;
   border: 1px solid #5A6ACF;
   border-radius: 6px;
   color: #5A6ACF;
-  ;
   cursor: pointer;
 }
 
