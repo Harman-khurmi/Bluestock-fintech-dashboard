@@ -1,0 +1,38 @@
+/* src/components/DoughnutChart.css */
+.chart-container {
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  height: 85px;
+  width: 120px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 28px;
+  background: #37375C;
+  color: #fff;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
