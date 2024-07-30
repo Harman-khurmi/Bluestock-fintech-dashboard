@@ -187,27 +187,46 @@ body {
   gap: 120px 100px;
 
 }
-.top-rows
-{
+
+.top-rows {
   min-height: 70vh;
-  
+
 }
-.bottom-rows
-{
+
+.bottom-rows {
   min-height: 100vh;
 }
-.bottom-row-head
-{
+
+.bottom-row-head {
   text-align: left;
   justify-content: left;
   font-size: 16px;
 }
+
 .input-row {
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: left;
   text-align: left;
+}
+
+.dropdown {
+  padding: 5px;
+  padding-left: 15px;
+  width: 325px;
+  height: 50px;
+  line-height: 36px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/*  */
+.dropdown option {
+  margin-left: 10px;
+  padding: 5px;
 }
 
 .input-row label {
@@ -217,9 +236,11 @@ body {
 
 .input-row input {
   padding: 5px;
+  padding-left: 15px;
   width: 300px;
   line-height: 36px;
   border-radius: 6px;
   font-size: 16px;
   border: 2px solid rgba(0, 0, 0, 0.2);
+
 }

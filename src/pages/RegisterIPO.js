@@ -51,70 +51,80 @@ const RegisterIPO = () => {
 
               <div className="input-row">
                 <label>Company Name</label>
-                <input type="text" />
+                <input type="text" placeholder={"Vodafone Idea"} />
               </div>
               <div className="input-row">
                 <label>Price Brand</label>
-                <input type="text" />
+                <input type="text" placeholder={"Not Issued"} />
               </div>
               <div className="input-row">
                 <label>Open</label>
-                <input type="text" />
+                <input type="text" placeholder={"Not Issued"} />
               </div>
               <div className="input-row">
                 <label>Close</label>
-                <input type="text" />
+                <input type="text" placeholder={"Not Issued"} />
               </div>
               <div className="input-row">
                 <label>Issue Size</label>
-                <input type="text" />
+                <input type="text" placeholder={"2300 Cr."} />
               </div>
               <div className="input-row">
                 <label>Issue Type</label>
-                <input type="text" />
+                <select className='dropdown'>
+                  <option placeholder="">Select an option</option>
+                  <option placeholder="option1">Option 1</option>
+                  <option placeholder="option2">Option 2</option>
+                  <option placeholder="option3">Option 3</option>
+                </select>
               </div>
               <div className="input-row">
                 <label>Listing Date</label>
-                <input type="text" />
+                <input type="text" placeholder={"Not Issued"} />
               </div>
               <div className="input-row">
                 <label>Status</label>
-                <input type="text" />
+                <select className='dropdown'>
+                  <option placeholder="">Select an option</option>
+                  <option placeholder="option1">Option 1</option>
+                  <option placeholder="option2">Option 2</option>
+                  <option placeholder="option3">Option 3</option>
+                </select>
               </div>
             </div>
             <h2 className='bottom-row-head'>NEW LISTED IPO DETAILS WHEN IPO GET LISTED</h2>
             <div className="inputs bottom-rows">
               <div className="input-row">
                 <label>IPO Price</label>
-                <input type="text" />
+                <input type="text" placeholder={"381"} />
               </div>
               <div className="input-row">
                 <label>Listing Price</label>
-                <input type="text" />
+                <input type="text" placeholder={"108"} />
               </div>
               <div className="input-row">
                 <label>Listing Gain</label>
-                <input type="text" />
+                <input type="text" placeholder={"13.8%"} />
               </div>
               <div className="input-row">
                 <label>Listing Date</label>
-                <input type="text" />
+                <input type="text" placeholder={"30-07-2024"} />
               </div>
               <div className="input-row">
                 <label>CMP</label>
-                <input type="text" />
+                <input type="text" placeholder={"410"} />
               </div>
               <div className="input-row">
                 <label>Current Return</label>
-                <input type="text" />
+                <input type="text" placeholder={"5%"} />
               </div>
               <div className="input-row">
                 <label>RHP</label>
-                <input type="text" />
+                <input type="text" placeholder={"Enter RHP Pdf Link"} />
               </div>
               <div className="input-row">
                 <label>DRHP</label>
-                <input type="text" />
+                <input type="text" placeholder={"Enter DRHP Pdf Link"} />
               </div>
             </div>
           </div>

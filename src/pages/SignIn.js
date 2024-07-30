@@ -18,7 +18,7 @@ const SignIn = () => {
       <div className="signin-form">
         <div className="form-group">
           <label htmlFor="email">Email Address</label>
-          <input type="email" id="email" name="email" value="johndoe@gmail.com" />
+          <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" />
         </div>
         <div className="form-group">
           <div className="passforgot">
@@ -32,7 +32,7 @@ const SignIn = () => {
             type={passwordVisible ? "text" : "password"}
             id="password"
             name="password"
-            value="harmankhurmi365" className={`form-control ${passwordVisible ? 'visible' : ''}`}
+            placeholder="**********" className={`form-control ${passwordVisible ? 'visible' : ''}`}
           />
           <span
             className={`password-icon ${passwordVisible ? 'visible-icon' : ''}`}
