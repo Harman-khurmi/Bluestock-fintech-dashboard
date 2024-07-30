@@ -31,14 +31,16 @@
 .menu-item {
   display: flex;
   align-items: center;
+  justify-content: left;
   padding: 10px 20px;
   color: rgba(120, 127, 137, 0.6);
   text-decoration: none;
   margin-bottom: 10px;
-  gap: 15px;
+  gap: 16px;
   font-size: 14px;
   font-weight: 500;
   width: 160px;
+  text-align: left;
 }
 
 .menu-item:hover {

@@ -27,8 +27,7 @@ const Sidebar = () => {
           Dashboard
         </Link>
         <Link to="/manage-ipo" className={`menu-item ${activeButton === '/manage-ipo' ? 'active' : ''}`} onClick={() => handleButtonClick('/manage-ipo')}>
-          <i class="fa-solid fa-cart-shopping"></i>
-          Manage IPO
+          <i class="fa-solid fa-cart-shopping"></i>Manage IPO
         </Link>
         <Link to="/ipo-subscription" className={`menu-item ${activeButton === '/ipo-subscription' ? 'active' : ''}`} onClick={() => handleButtonClick('/ipo-subscription')}>
           <i class="fa-solid fa-file-lines"></i>
