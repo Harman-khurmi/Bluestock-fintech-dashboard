@@ -102,12 +102,13 @@
   margin-top: 10px;
   font-weight: 500;
 }
-.signin-link
-{
+
+.signin-link {
   text-decoration: none;
   color: white;
   font-weight: 500;
 }
+
 .social-login-btn {
   display: flex;
   background-color: #E4E7EB;
@@ -116,7 +117,10 @@
   justify-content: center;
   gap: 16px;
 }
-
+.signin-btn:disabled
+{
+  background-color: #443da7;
+}
 .create-account {
   display: block;
   margin-top: 20px;
@@ -130,35 +134,17 @@
   text-decoration: underline;
 }
 
-.robot {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding-left: 25px;
-  border: 1px black solid;
-  border-radius: 18px;
-  height: 68px;
-  gap: 10px;
-}
-
-.robot label {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-size: 16px;
+.robot-signin {
+  margin: 10px 50px;
+  background-color: white;
 }
 
 .keepin {
   display: flex;
   align-items: center;
   justify-content: left;
-
-
 }
-.robot .captcha
-{
-  margin-left: 140px;
-}
+
 /* CUSTOM CHECKBOX */
 .keepin #keep-signed-in {
   height: 20px;

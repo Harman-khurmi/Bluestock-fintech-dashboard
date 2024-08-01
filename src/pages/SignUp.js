@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../pages/SignUp.css';
 import textlogo from '../assets/textlogo.png';
 import google from '../assets/Google.png';
-import captcha from '../assets/google_recaptcha-official 2.png';
+import ReCAPTCHA from "react-google-recaptcha";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const SignUp = () => {
@@ -11,6 +11,12 @@ const SignUp = () => {
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
+  const [verified, setVerified] = useState(false);
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  };
+
 
   return (
     <div className="SignUp-container">
@@ -49,12 +55,17 @@ const SignUp = () => {
         <div className="form-group keepin">
           <label htmlFor="keep-signed-in">By continuing, you agree to our <a href='/terms&condition'>terms of service</a></label>
         </div>
-        <div className="form-group robot">
+        {/* <div className="form-group robot">
           <input type="checkbox" id="robot-check" name="robot-check" />
           <label htmlFor="robot-check">I'm not a robot</label>
           <img src={captcha} alt="" className="captcha" />
-        </div>
-        <button className="login-btn"><Link to="/Dashboard" className='Login-link'>Sign up</Link></button>
+        </div> */}
+        <ReCAPTCHA
+          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          onChange={onChange}
+          className='robot'
+        />
+        <button className="login-btn" disabled={!verified}><Link to="/Dashboard" className='Login-link'>Sign up</Link></button>
 
         <div className="or-cover">
           <hr className='left-line' />

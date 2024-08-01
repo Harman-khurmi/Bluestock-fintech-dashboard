@@ -6,11 +6,18 @@ import google from '../assets/Google.png';
 import captcha from '../assets/google_recaptcha-official 2.png';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ReCAPTCHA from "react-google-recaptcha";
 const SignIn = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
+  const [verified, setVerified] = useState(false);
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  };
+
 
   return (
     <div className="signin-container">
@@ -42,16 +49,22 @@ const SignIn = () => {
           </span>
 
         </div>
-        <div className="form-group robot">
+        {/* <div className="form-group robot">
           <input type="checkbox" id="robot-check" name="robot-check" />
           <label htmlFor="robot-check">I'm not a robot</label>
           <img src={captcha} alt="" className="captcha" />
-        </div>
+        </div> */}
+        <ReCAPTCHA
+          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+          onChange={onChange}
+          className='robot-signin'
+          theme='light'
+        />
         <div className="form-group keepin">
           <input type="checkbox" id="keep-signed-in" name="keep-signed-in" />
           <label htmlFor="keep-signed-in">Keep me signed in</label>
         </div>
-        <button className="signin-btn"><Link to="/Dashboard" className='signin-link'>Login</Link></button>
+        <button className="signin-btn" disabled={!verified}><Link to="/Dashboard" className='signin-link'>Login</Link></button>
 
         <div className="or-cover">
           <hr className='left-line' />
